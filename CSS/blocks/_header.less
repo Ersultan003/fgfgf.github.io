@@ -1,0 +1,156 @@
+// main: ..//style.less
+
+
+.header {
+    background: url(.././images/dest/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 911px;
+    width: 100%;
+
+    .header__top {
+        width: 100%;
+        padding-top: 76px;
+        padding-bottom: 116px;
+        display: flex;
+        justify-content: space-between;
+
+        .contact {
+            flex-direction: column;
+            display: flex;
+
+            a {
+                color: @white;
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: right;
+                font-family: "MuseoSansBold";
+
+                &:hover {
+                    opacity: 75%;
+                }
+            }
+        }
+    }
+
+    .header__inner {
+        width: 436px;
+        color: @white;
+
+        .header__desc {
+            width: 407px;
+
+            h2 {
+                font-size: 27px;
+                line-height: 32px;
+                margin-bottom: 25px;
+                border-bottom: 2px solid @green;
+                padding-bottom: 25px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 20px;
+                margin-bottom: 40px;
+            }
+        }
+
+
+    }
+}
+
+// Media
+
+
+
+@media screen and (max-width:1681px) {
+    .header {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1142px) {
+    .header {
+        background-size: cover;
+        .container {
+            width: 81%;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .header {
+        .header__top {
+            padding-bottom: 40px;
+        }
+
+        .header__inner {
+            img {
+                width: 316px;
+            }
+
+            .header__desc {
+                width: 80%;
+
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .header {
+        .header__top {
+            width: 80%;
+            padding: 40px 0;
+            flex-direction: column;
+        }
+
+        .header__inner {
+            .header__desc {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .header {
+        .header__inner {
+            img {
+                width: 250px;
+            }
+
+            .header__desc {
+                width: 60%;
+
+                h2 {
+                    font-size: 18px;
+                }
+            }
+
+            .form {
+                flex-direction: column;
+                display: flex;
+
+                input {
+                    width: 61%;
+                }
+
+                .btn {
+                    width: 61%;
+                }
+            }
+        }
+    }
+}

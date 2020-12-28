@@ -1,0 +1,117 @@
+// main: ..//style.less
+
+
+.b10 {
+    padding-top: 50px;
+
+    .b10__header {
+        width: 820px;
+        margin: 0 auto;
+        margin-bottom: 110px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 34px;
+        font-family: "MuseoSansBold";
+
+        h2 {
+            margin-bottom: 20px;
+
+        }
+
+        span {
+            color: @green;
+        }
+    }
+
+    .b10__wrapper {
+        width: 1130px;
+        margin: 0 auto;
+
+
+        .b10__inner {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+
+
+            .b10__right {
+                width: 539px;
+
+                h3 {
+                    font-size: 22px;
+                    line-height: 26px;
+                    font-family: "MuseoSansBlack";
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 17px;
+                    margin-bottom: 25px;
+                }
+
+                h4 {
+                    color: @green;
+                    font-size: 22px;
+                    line-height: 26px;
+                    font-family: "MuseoSansMedium";
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+// Media
+
+
+@media screen and (max-width:1024px) {
+    .b10 {
+        .b10__wrapper {
+            width: 104%;
+
+            .b10__inner {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .b10 {
+        .b10__header {
+            width: 100%;
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .b10__wrapper {
+            .b10__inner {
+                flex-direction: column;
+
+                .b10__left {
+                    img {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .b10 {
+        .b10__wrapper {
+            .b10__inner {
+
+                .b10__right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+// main: ..//style.less
+
+
+
+.form {
+
+    .name,
+    .phone {
+        width: 318px;
+        height: 44px;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 27px;
+        background: @gray-light;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+        color: @black;
+    }
+
+}
+
+.btn {
+    width: 318px;
+    height: 44px;
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+    background: linear-gradient(270deg, #299629 22.54%, #5AC75A 85.94%), #5AC75A;
+    color: @white;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "MuseoSansBlack";
+    transition: .2s;
+
+    &:hover {
+        transform: scale(.99);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    width: 1272px;
+    background: url(.././images/dest/wrapperbgperson.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 69px 220px;
+    background-color: @white;
+
+    .wrapper__text {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: "MuseoSansBlack";
+
+        h3 {
+            font-size: 25px;
+            line-height: 28px;
+
+            span {
+                color: @green;
+            }
+        }
+    }
+
+
+    .form {
+        width: 961px;
+        text-align: center;
+        display: flex;
+
+        input {
+            margin-right: 30px;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    .wrapper {
+        width: 100%;
+        padding: 0.6rem;
+
+        .wrapper__text {
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+
+        .form {
+            width: 50%;
+            flex-direction: column;
+            margin: 0 292px;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        .form {
+            margin: 0 11rem;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .wrapper {
+        border-radius: 15px;
+
+        .form {
+            margin: 0 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .wrapper {
+        .form {
+            input {
+                width: 180%;
+            }
+
+            .btn {
+                width: 180%;
+            }
+        }
+    }
+}

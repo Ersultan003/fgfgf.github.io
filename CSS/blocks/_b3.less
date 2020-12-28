@@ -1,0 +1,49 @@
+// main: ..//style.less
+
+
+.b3 {
+    overflow: hidden;
+    background: url(.././images/dest/b3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .b3 {
+        background-position: -370px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .b3 {
+        background-position: -406px 0;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .b3 {
+        background: url(.././images/dest/b3bgmedia.jpg);
+      
+        background-repeat: no-repeat;
+        background-position: -36px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .b3 {
+        width: 116%;
+        height: 282px;
+        background-position-x: -20px;
+        object-fit: cover;
+        background-size: contain;
+    }
+}

@@ -1,0 +1,59 @@
+// main: ..//style.less
+
+
+.footer {
+    padding: 90px 0;
+    background: linear-gradient(270deg, #299629 22.54%, #5AC75A 85.94%), #5AC75A;
+
+    .footer__inner {
+        width: 1119px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+
+        a {
+            color: @white;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            transition: 0.2s linear;
+
+            img {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                opacity: 65%;
+            }
+        }
+    }
+}
+
+// Media
+
+
+@media screen and (max-width:1024px) {
+    .footer {
+        .footer__inner {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .footer {
+        .footer__inner {
+            flex-direction: column;
+
+            a {
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
+        }
+    }
+}

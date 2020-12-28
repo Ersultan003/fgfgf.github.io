@@ -1,0 +1,98 @@
+// main: ..//style.less
+
+
+.b4 {
+    padding: 110px 0;
+
+    .b4__inner {
+        width: 1104px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .b4__col {
+            width: 533px;
+            line-height: 19px;
+
+            p {
+                margin-bottom: 25px;
+            }
+
+            span {
+                font-family: "MuseoSansBold";
+                color: @green;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .subtitle {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 29px;
+
+        span {
+            color: @green;
+        }
+    }
+}
+
+//Media
+
+
+@media screen and (max-width:1024px) {
+    .b4 {
+        padding: 50px 0;
+
+        .container {
+            width: 43%;
+        }
+
+        .b4__inner {
+            flex-direction: column;
+
+            .b4__col {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .b4 {
+        .container {
+            width: 66%;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .b4 {
+        padding: 20px 0;
+
+        .b4__inner {
+            .b4__col {
+                width: 30%;
+
+            }
+
+        }
+
+        .subtitle {
+            h2 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px){
+    .b4{
+        .b4__inner{
+            .b4__col{
+                width: 23%;
+            }
+        }
+    }
+}

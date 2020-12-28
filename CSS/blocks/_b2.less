@@ -1,0 +1,66 @@
+// main: ..//style.less
+
+
+.b2 {
+    padding: 110px 0;
+
+    .b2__inner {
+        width: 1103px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .b2__right {
+            margin-left: 30px;
+
+            p {
+                font-size: 15px;
+                line-height: 17px;
+
+                &:first-child {
+                    margin-bottom: 60px;
+                }
+            }
+
+            span {
+                color: @green;
+            }
+        }
+    }
+}
+
+// Media
+
+@media screen and (max-width:1496px) {
+    .b2 {
+        .container {
+            width: 90%;
+        }
+
+    }
+}
+
+@media screen and (max-width:1174px) {
+    .b2 {
+        padding: 55px 0;
+
+        .b2__inner {
+            flex-direction: column;
+            width: 58%;
+
+            .b2__right {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .b2 {
+        .b2__inner {
+            width: 100%;
+        }
+    }
+}
